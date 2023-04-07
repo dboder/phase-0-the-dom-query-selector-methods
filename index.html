@@ -1,12 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Introduction to the DOM Lab</title>
-  </head>
-  <body>
-    <!--Copy the lesson's example code here-->
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Introduction to the DOM Lab</title>
+</head>
+
+<body>
+  <div>
+    <ul class="ranked-list">
+      <li>1</li>
+      <li>
+        <div>
+          <ul>
+            <li>2</li>
+          </ul>
+        </div>
+      </li>
+      <li>3</li>
+    </ul>
+  </div>
+
+  <div>
+    <ul class="unranked-list">
+      <li>6</li>
+      <li>2</li>
+      <li>
+        <div>4</div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+<!-- 
+const li2 = document.querySelector("ul.ranked-list li ul li");
+li2;
+//=> <li>2</li>
+
+const div4 = document.querySelector("ul.unranked-list li div");
+div4;
+//=> <div>4</div> 
+-->
+
 </html>
